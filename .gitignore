@@ -1,0 +1,75 @@
+# =====================================================================
+# Proyecto: Herramienta de reabastecimiento — Postobón S.A. (práctica U. de A.)
+#
+# REGLA DURA: los datos de Postobón (ventas, colocación, devoluciones,
+# vida útil, maestro de tiendas, notas crédito) son información de la
+# empresa y NO se versionan. Solo se versiona código, scripts y
+# documentos metodológicos propios.
+# =====================================================================
+
+# --- Extractos crudos y modelos de Power BI -------------------------
+# (viven en datos/crudos/ — se ignoran igual por extension, por si acaso)
+*.xlsx
+*.XLSX
+*.xls
+*.xlsm
+*.pbix
+*.pbit
+
+# --- Datos procesados / intermedios ---------------------------------
+# (incluye datos/crudos/ y datos/procesados/)
+datos/
+data/
+*.csv
+*.parquet
+*.pkl
+*.feather
+
+# --- Salidas con cifras de la operación real ------------------------
+figuras/
+*.png
+*.jpg
+*.jpeg
+*.svg
+informes/Informe_diagnostico_Fase1.html
+informes/*.docx
+*.html
+
+# --- Documentos personales / institucionales ------------------------
+documentos/
+*.pdf
+
+# --- Credenciales y rutas a sistemas internos -----------------------
+.env
+.env.*
+*credenciales*
+*credentials*
+*secret*
+*.key
+config_local.*
+
+# --- Python ---------------------------------------------------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# --- R --------------------------------------------------------------
+.Rhistory
+.RData
+.Rproj.user/
+
+# --- Editores y sistema operativo -----------------------------------
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+~$*
+
+# --- Grafo de conocimiento generado (graphify) ----------------------
+# graph.json y GRAPH_REPORT.md incluyen etiquetas con cifras reales
+# (tasas, cajas, claves SAP): salida derivada, no se versiona.
+graphify-out/
